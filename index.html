@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#092e58">
+    <title>Meu Espaço Digital | Demonstração</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="topbar">
+        <a href="#" class="brand" id="homeLink" aria-label="Página inicial">
+            <span class="brand-symbol">D</span>
+            <span>
+                <strong>Meu Espaço Digital</strong>
+                <small>Portal demonstrativo</small>
+            </span>
+        </a>
+
+        <span class="demo-label">AMBIENTE DE TESTE</span>
+    </header>
+
+    <main class="container">
+        <div class="breadcrumb">
+            <a href="#" id="breadcrumbHome">Início</a>
+            <span> / </span>
+            <span id="breadcrumbCurrent">Meus documentos</span>
+        </div>
+
+        <section id="listView">
+            <div class="page-heading">
+                <div>
+                    <p class="eyebrow">ÁREA PESSOAL FICTÍCIA</p>
+                    <h1>Meus documentos</h1>
+                    <p class="subtitle">
+                        Consulte seus documentos neste ambiente de demonstração.
+                    </p>
+                </div>
+                <div class="profile-avatar" aria-hidden="true">HF</div>
+            </div>
+
+            <div class="demo-notice">
+                <span class="notice-icon">i</span>
+                <p>
+                    <strong>Projeto demonstrativo</strong><br>
+                    Os documentos e dados exibidos são fictícios.
+                    Esta plataforma não é um serviço governamental.
+                </p>
+            </div>
+
+            <h2 class="section-title">Documentos disponíveis</h2>
+
+            <div class="document-grid" id="documentGrid"></div>
+
+            <div class="privacy-note">
+                <span aria-hidden="true">🔒</span>
+                <p>Os dados desta demonstração são estáticos e não são enviados
+                para servidores.</p>
+            </div>
+        </section>
+
+        <section id="detailView" hidden>
+            <button class="back-button" id="backButton">
+                <span aria-hidden="true">←</span>
+                Voltar para documentos
+            </button>
+
+            <div class="detail-heading">
+                <div>
+                    <p class="eyebrow">DOCUMENTO DEMONSTRATIVO</p>
+                    <h1 id="detailTitle">Documento</h1>
+                    <p class="subtitle" id="detailDescription"></p>
+                </div>
+                <span class="status-pill">EXEMPLO</span>
+            </div>
+
+            <div class="document-preview">
+                <div class="preview-header">
+                    <div class="preview-symbol" id="previewIcon">ID</div>
+                    <div>
+                        <p class="preview-overline">MEU ESPAÇO DIGITAL</p>
+                        <h2 id="previewTitle">Documento digital</h2>
+                        <p class="preview-caption">MODELO FICTÍCIO • SEM VALIDADE</p>
+                    </div>
+                </div>
+
+                <div class="preview-body">
+                    <div class="fake-photo" aria-label="Foto ilustrativa">
+                        <span id="photoInitials">HF</span>
+                        <small>FOTO ILUSTRATIVA</small>
+                    </div>
+
+                    <div class="identity-fields">
+                        <div class="field">
+                            <span>Nome fictício</span>
+                            <strong id="personName"></strong>
+                        </div>
+
+                        <div class="field">
+                            <span>Identificador de exemplo</span>
+                            <strong id="documentNumber"></strong>
+                        </div>
+
+                        <div class="field">
+                            <span>Data de nascimento fictícia</span>
+                            <strong id="birthDate"></strong>
+                        </div>
+
+                        <div class="field">
+                            <span>Emissão ilustrativa</span>
+                            <strong id="issueDate"></strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="preview-footer">
+                    <span>MODELO NÃO OFICIAL</span>
+                    <span id="documentTypeFooter">DOCUMENTO DIGITAL</span>
+                </div>
+            </div>
+
+            <div class="details-panel">
+                <h2>Informações do documento</h2>
+                <p class="panel-description">
+                    Informações fictícias utilizadas para demonstrar
+                    a visualização de um documento digital.
+                </p>
+
+                <div class="info-row">
+                    <span>Categoria</span>
+                    <strong id="infoCategory"></strong>
+                </div>
+
+                <div class="info-row">
+                    <span>Situação no protótipo</span>
+                    <strong class="fictional-status">Exemplo ilustrativo</strong>
+                </div>
+
+                <div class="info-row">
+                    <span>Autenticidade</span>
+                    <strong>Não verificada</strong>
+                </div>
+
+                <div class="qr-section">
+                    <div>
+                        <h3>QR Code ilustrativo</h3>
+                        <p>Este padrão visual não verifica nem autentica
+                        documentos.</p>
+                    </div>
+                    <div class="qr-placeholder" id="qrCode"
+                         role="img"
+                         aria-label="Padrão visual fictício, sem função de validação">
+                    </div>
+                    <span class="qr-warning">NÃO VÁLIDO • SEM AUTENTICAÇÃO</span>
+                </div>
+            </div>
+
+            <button class="primary-button" id="returnButton">
+                Voltar para meus documentos
+            </button>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <strong>Meu Espaço Digital</strong>
+        <p>Projeto acadêmico demonstrativo • Não oficial</p>
+        <p>Não substitui documentos emitidos por órgãos competentes.</p>
+    </footer>
+</body>
+</html>
